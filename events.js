@@ -3,9 +3,9 @@ function saludar(){
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    let container= document.getElementById('container');
+    let container= document.getElementsByClassName('container');
     container.addEventListener('click', function(){
-        alert('Hola! Soy el div jiji')
+        alert('Hola! Soy el div jiji');
     } );
 }
 );
