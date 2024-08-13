@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            .container {
+            .parentDiv{
     padding: 5px;
     background-color: green;
             }
@@ -13,8 +13,8 @@
     </head>
     <body>
         <h1>Taller de eventos!</h1>
-       <div class="container"> 
-        <button onclick="alert('¡Hola!')">Saludar</button>
+       <div id="parentDiv"> 
+        <button id="childButton"onclick="alert('¡Hola!')">Saludar</button>
    <p>Este parrafo es para probar.</p> 
 </div>
 <script src="events.js"></script>

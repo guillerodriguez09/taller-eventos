@@ -1,8 +1,11 @@
+const parentDiv = document.getElementById('parentDiv');
+const childButton = document.getElementById('childButton');
 
-document.addEventListener('DOMContentLoaded', () => {
-    let container= document.querySelector(".container");
-    container.addEventListener("click", function() {
-        alert('Hola! Soy el div jiji');
-    } );
-}
-);
+parentDiv.addEventListener('click', function() {
+    console.log('Div clicked');
+});
+
+childButton.addEventListener('click', function(event) {
+    event.stopPropagation();
+    console.log('Button clicked');
+});
