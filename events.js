@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-    let container= document.getElementsByClassName("container");
+    let container= document.querySelector(".container");
     container.addEventListener("click", function() {
         alert('Hola! Soy el div jiji');
     } );
