@@ -1,10 +1,7 @@
-function saludar(){
-    alert('Hola!');
-}
 
-document.addEventListener('DOMContentLoaded', function () {
-    let container= document.getElementsByClassName('container');
-    container.addEventListener('click', function(){
+document.addEventListener('DOMContentLoaded', () => {
+    let container= document.getElementsByClassName("container");
+    container.addEventListener("click", function() {
         alert('Hola! Soy el div jiji');
     } );
 }
